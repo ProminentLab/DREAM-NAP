@@ -18,6 +18,11 @@ Bold values designate that the proposed model outperforms state-of-the-art resul
 ### Arithmetic Means of Ranks
 ![Arithmetic Ranks](https://github.com/Julian-Theis/DREAM-NAP/blob/master/images/ranks.gif?raw=true)
 
+## PM4Py Implementation
+The [PyDREAM](https://github.com/Julian-Theis/PyDREAM) project is a Python-based implementation of DREAM and DREAM-NAP using the open source process mining platform [PM4Py](http://pm4py.org/).
+
+[https://github.com/Julian-Theis/PyDREAM](https://github.com/Julian-Theis/PyDREAM)
+
 ## ProM Plugin
 We have implemented the Decay Replay Mining (DREAM) preprocessing approach as a [ProM](http://www.promtools.org) plugin. The plugin considers a Petri net process model as PNML and an CSV formatted event log as input and produces timed state samples that can be used for further machine learning and data science tasks. The plugin enhances and parametrizes each place of the process model with a time decay function. Afterwards, the event log is replayed on the enhanced model and timed state samples are extracted at every discrete timestep observed in the log.  
 The plugin and its documentation is available here: [https://prominentlab.github.io/ProM-DREAM/](https://prominentlab.github.io/ProM-DREAM/).
